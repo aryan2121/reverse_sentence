@@ -1,0 +1,39 @@
+import java.util.*;
+public class strrv
+ {
+
+    public static void main(String[] args) 
+{
+       Scanner obj=new Scanner(System.in);
+       System.out.println("Enter the string here:");
+       String str=obj.nextLine();
+       int l=str.length();
+       char ch;
+       String str1=" ";
+       String str2=" ";
+       String a=" ";
+       for(int i=0;i<l;i++)
+{
+       ch=str.charAt(i);
+
+
+if(ch==' '){
+
+str2=str1+str2;
+str1=" ";}
+else{
+
+str1=str1+ch;}
+ 
+   
+
+}
+System.out.print("Reverse = "+str1);
+        
+        System.out.print(str2);
+
+
+
+}
+
+}
